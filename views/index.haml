@@ -1,12 +1,58 @@
-!!!
+!!! 5
 %html
   %head
     %meta{:charset => "utf-8"}
     %meta{:content => "IE=edge,chrome=1", "http-equiv" => "X-UA-Compatible"}
     %title
     %meta{:content => "", :name => "description"}
-    %meta{:content => "width=device-width", :name => "viewport"}
+    %meta{:content => "width=device-width, initial-scale=1.0", :name => "viewport"}
+    %link{:href => "http://fonts.googleapis.com/css?family=Pacifico|Open+Sans:700,300,400", :rel => "stylesheet"}
+    %link{:href => "assets/bootstrap.min.css", :rel => "stylesheet"}
+    %link{:href => "assets/bootstrap-responsive.min.css", :rel => "stylesheet"}
     %link{:href => "assets/app.css", :rel => "stylesheet"}
   %body
-    %code Hi
+    #splash
+      .container
+        .row
+          .hero.span12
+            %p Stockholm
+            %h1 Startup Hack
+            %h2 A day for developers, designers and innovators living in Stockholm to meet and build things together.
+            .offset2.span8
+              %form
+                %input{type: "text", placeholder: "Type email to get notified"}
+                %input{type: "submit", value: ">"}
+
+    .container
+      .row.featured
+        .offset4.span4
+          %h3 Featured in
+
+      .row.press
+        .span4
+          %img{src: image_path("wired.png")}
+        .span4
+          %img{src: image_path("internetworld.png")}
+        .span4
+          %img{src: image_path("nyaaffarer.png")}
+
+      .row.team
+        .span4.member
+          %img{src: image_path("jocke.jpg")}
+          %h4 Joakim Ekberg
+          %a{src: "https://www.wrapp.com/"} Wrapp
+          %p Rubyist, Entrepreneur and Barefoot Hacker making software for iPhone, iPad and the Web. Currently Team Lead at Wrapp. Also, I'm a nice guy.
+
+        .span4.member
+          %img{src: image_path("martina.jpg")}
+          %h4 Martina Elm
+          %a{src: "https://www.wrapp.com/"} Mitt livs disco
+          %p Rubyist, Entrepreneur and Barefoot Hacker making software for iPhone, iPad and the Web. Currently Team Lead at Wrapp. Also, I'm a nice guy.
+
+        .span4.member
+          %img{src: image_path("jonny.jpg")}
+          %h4 Jonny Strömberg
+          %a{src: "https://www.wrapp.com/"} Salvation
+          %p Rubyist, Entrepreneur and Barefoot Hacker making software for iPhone, iPad and the Web. Currently Team Lead at Wrapp. Also, I'm a nice guy.
+
     %script{:src => "assets/app.js"}
