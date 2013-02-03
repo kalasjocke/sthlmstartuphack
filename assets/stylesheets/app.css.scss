@@ -79,14 +79,20 @@ a {
   }
 }
 
-.featured {
+h3.fancy {
+  @include box-sizing(border-box);
+  padding: 40px;
+  font-family: 'Pacifico', cursive;
+  font-size: 24px;
+  font-weight: bold;
   text-align: center;
-  h3 {
-    @include box-sizing(border-box);
-    padding: 40px;
-    font-family: 'Pacifico', cursive;
-    font-size: 24px;
-    font-weight: bold;
+}
+
+.desciption {
+  p {
+    font-size:20px;
+    line-height:1.6;
+    margin-bottom:25px;
   }
 }
 
@@ -178,6 +184,17 @@ a {
     }
     input[type="submit"] {
       padding: 17px 0px;
+    }
+  }
+  h3.fancy {
+    padding:20px;
+  }
+  .desciption {
+    p {
+      font-size:15px;
+      line-height:1.6;
+      margin-left:40px;
+      margin-right:40px;
     }
   }
 }
