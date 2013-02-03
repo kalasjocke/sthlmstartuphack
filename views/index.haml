@@ -12,8 +12,8 @@
     %link{:href => "assets/app.css", :rel => "stylesheet"}
   %body
     #splash
-      .container
-        .row
+      .container-fluid
+        .row-fluid
           .hero.span12
             %p Stockholm
             %h1 Startup Hack
@@ -23,12 +23,12 @@
                 %input{type: "text", placeholder: "Type email to get notified"}
                 %input{type: "submit", value: ">"}
 
-    .container
-      .row.featured
+    .container-fluid
+      .row-fluid.featured
         .offset4.span4
           %h3 Featured in
 
-      .row.press
+      .row-fluid.press
         .span4
           %img{src: image_path("wired.png")}
         .span4
@@ -36,7 +36,7 @@
         .span4
           %img{src: image_path("nyaaffarer.png")}
 
-      .row.team
+      .row-fluid.team
         .span4.member
           %img{src: image_path("jocke.jpg")}
           %h4 Joakim Ekberg
