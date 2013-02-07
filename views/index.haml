@@ -3,7 +3,7 @@
   %head
     %meta{:charset => "utf-8"}
     %meta{:content => "IE=edge,chrome=1", "http-equiv" => "X-UA-Compatible"}
-    %title Stockholm Startup Hack - May 11 - #SthlmStartupHack
+    %title Stockholm Startup Hack - May 11 / 2013 - #SthlmStartupHack
     %meta{:content => "A day for developers, designers and innovators living in Stockholm to meet and build things together.", :name => "description"}
     %meta{:content => "width=device-width, initial-scale=1.0", :name => "viewport"}
     %link{:href => "http://fonts.googleapis.com/css?family=Pacifico|Open+Sans:700,300,400", :rel => "stylesheet"}
@@ -22,14 +22,13 @@
               %h2
                 %b May 11 2013
                 at Skeppsholmskyrkan
-              // %p Save the date - May 11 2013! #SthlmStartupHack at Skeppsholmskyrkan.
               .row-fluid
                 .offset3.span6
                   %form{method: "POST"}
                     %input{name: "email", type: "text", placeholder: "Join our email list"}
                     %input{type: "submit", value: ">"}
 
-    .container-fluid
+    .container-fluid.bottom
       .row-fluid
         .offset4.span4
           %h3.fancy About
@@ -38,6 +37,13 @@
           %p Stockholm Startup Hack is a day for developers, designers and innovators living in Stockholm to meet and build things together. We want to put Stockholm on the map as one of the best startup cities in Europe, as well as grow and strengthen our community. We hope that this hackathon can be a small step in that direction.
           %h4 How it works?
           %p Participants will get 12 hours to create something, you can choose to work on your own or in a team (max five people). You can build whatever you want as long as it can stand on its own. We really want to encourage you to make something out of that idea you’ve been saving for later, rather than building something related to your job. Of course, the most important part is that it’s fun and inspiring.
+          .row-fluid
+            .span3.offset2
+              <a href="https://twitter.com/share" class="twitter-share-button" data-text="Save the date - May 11 2013! #SthlmStartupHack at Skeppsholmskyrkan." data-url="http://sthlmstartuphack.com">Tweet</a>
+            .span3
+              <div class="fb-like" data-send="false" data-layout="button_count" data-show-faces="false" data-font="arial" data-width="100" data-href="https://www.facebook.com/pages/STHLM-Startup-Hack/416909925056755"></div>
+            .span3
+              <div class="g-plusone" data-size="medium" data-annotation="inline" data-width="120" href="http://sthlmstartuphack.com"></div>
 
       .row-fluid
         .offset4.span4
@@ -58,12 +64,14 @@
           %h5
             %a{href: "https://www.wrapp.com/"} Wrapp
           %p Rubyist, Entrepreneur and Barefoot Hacker making software for iPhone, iPad and the Web. Currently Team Lead at <a href="http://wrapp.com">Wrapp</a>. Also, I'm a nice guy.
+          %p <a href="https://twitter.com/kalasjocke" class="twitter-follow-button" data-show-count="false" data-lang="en">Follow @kalasjocke</a>
 
         .span4.member
           %img{src: image_path("martina.jpg")}
           %h4 Martina Elm
           %h5 Mitt livs disco
           %p Freelance communications manager & event planner that loves food and the web. Head of marketing at <a href="http://www.islandinthesun.nu/">Island in the sun</a>.
+          %p <a href="https://twitter.com/martinaelm" class="twitter-follow-button" data-show-count="false" data-lang="en">Follow @martinaelm</a>
 
         .span4.member
           %img{src: image_path("jonny.jpg")}
@@ -71,5 +79,14 @@
           %h5
             %a{href: "http://www.jonnystromberg.com/"} Everywhere and nowhere
           %p Passionate Designer & JavaScript Hacker since 1998 who builds stuff. <a href="http://startuplocation.com">StartupLocation</a>, <a href="http://silarapp.com">Silarapp</a>, <a href="http://listjs.com">List.js</a> & more. Dribbble: <a href="http://dribbble.com/javve">@javve</a>.
+          %p <a href="https://twitter.com/javve" class="twitter-follow-button" data-show-count="false" data-lang="en">Follow @javve</a>
+
+      .row-fluid
+        .offset4.span4
+          %h3.fancy Sponsorship?
+      .row-fluid.desciption
+        .offset2.span8
+          %p Contact us for oppertunities <a href="mailto:sponsorship@sthlmstartuphack.com">sponsorship@sthlmstartuphack.com</a>.
+
 
     %script{:src => "assets/app.js"}
