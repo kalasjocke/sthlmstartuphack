@@ -19,8 +19,8 @@
             %h1 Startup Hack
             %h2 A day for developers, designers and innovators living in Stockholm to meet and build things together.
             .offset2.span8
-              %form
-                %input{type: "text", placeholder: "Type email to get notified"}
+              %form{method: "POST"}
+                %input{name: "email", type: "text", placeholder: "Type email to get notified"}
                 %input{type: "submit", value: ">"}
 
     .container-fluid

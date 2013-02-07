@@ -8,6 +8,7 @@ gem 'coffee-script'
 gem 'sprockets'
 gem 'sprockets-sass'
 gem 'sprockets-helpers'
+gem 'gibbon'
 
 group :development do
   gem 'rb-fsevent'
