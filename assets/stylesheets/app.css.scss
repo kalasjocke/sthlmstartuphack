@@ -94,6 +94,9 @@ a {
   }
 }
 
+.bottom {
+  padding-bottom:70px;
+}
 h3.fancy {
   @include box-sizing(border-box);
   padding: 40px;
