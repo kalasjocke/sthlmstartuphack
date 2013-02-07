@@ -16,14 +16,18 @@ a {
 }
 
 #splash {
-  background: image-url("hero.jpg") no-repeat center center;
+  background: image-url("hero2.jpg") no-repeat center center;
   @include background-size(cover);
   height: 100%;
 }
 
+.container-fluid {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
 .hero {
-  position: absolute;
-  top: 30%;
+  margin-top: 20%;
 
   color: white;
 
@@ -33,36 +37,47 @@ a {
     text-align: center;
   }
 
-  p {
-    font-size: 23px;
-    font-weight: 300;
-    letter-spacing: 30px;
-    text-transform: uppercase;
-  }
-
   h1 {
     font-family: 'Pacifico', cursive;
     font-size: 100px;
     font-weight: normal;
     line-height: 100px;
     @include text-shadow(0 0 15px rgba(0,0,0,0.07));
+    .city {
+      display: block;
+      font-family: 'Open Sans', sans-serif;
+      font-size: 23px;
+      font-weight: 300;
+      letter-spacing: 30px;
+      text-transform: uppercase;
+      padding-left:6%;
+    }
   }
 
   h2 {
     font-weight: normal;
+    font-size: 25px;
+    text-align: center;
+    max-width: 500px;
+    margin: 40px auto 40px;
+  }
+  p {
+    line-height:1.6;
+    font-weight: normal;
     font-size: 20px;
     text-align: center;
     max-width: 500px;
-    margin: 40px auto;
+    margin: 20px auto 40px;
   }
 
   input[type="text"], input[type="submit"] {
     @include box-sizing(border-box);
     @include border-radius(0px);
+    @include box-shadow(none);
     display: block;
     float: left;
     border: 0;
-    background-color: rgba(0,0,0,0.3);
+    background-color: rgba(0,0,0,0.5);
     font-size: 19px;
     color: #fff;
   }
@@ -73,7 +88,7 @@ a {
   }
 
   input[type="submit"] {
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(0,0,0,0.8);
     width: 15%;
     padding: 27px 0px;
   }
@@ -118,7 +133,7 @@ h3.fancy {
       width: 50%;
     }
 
-    h4, a, p {
+    h4, p {
       margin: 7px 0;
       display: block;
     }
@@ -127,9 +142,10 @@ h3.fancy {
       margin-top: 14px;
     }
 
-    a {
+    h5 {
       font-weight: bold;
       font-size: 17px;
+      color:#bbb;
     }
 
     p {
@@ -144,10 +160,12 @@ h3.fancy {
 @media (max-width: 767px) {
   #splash {
     height:auto;
+    .container-fluid {
+      background-color: rgba(0,0,0,0.4);
+    }
   }
   .hero {
-    position:static;
-    top:auto;
+    margin-top:0;
     padding:50px 20px;
     @include clearfix();
 
@@ -156,15 +174,15 @@ h3.fancy {
       text-align: center;
     }
 
-    p {
-      font-size: 15px;
-      letter-spacing: 15px;
-    }
-
     h1 {
       font-size: 40px;
       font-weight: normal;
       line-height: 1;
+      .city {
+        font-size: 15px;
+        letter-spacing: 15px;
+        margin-bottom:10px;
+      }
     }
 
     h2 {
@@ -190,6 +208,11 @@ h3.fancy {
     padding:20px;
   }
   .desciption {
+    h4 {
+      margin-left:40px;
+      margin-right:40px;
+      text-align:center;
+    }
     p {
       font-size:15px;
       line-height:1.6;

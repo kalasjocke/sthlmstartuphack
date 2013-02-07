@@ -14,24 +14,30 @@
     #splash
       .container-fluid
         .row-fluid
-          .hero.span12
-            %p Stockholm
-            %h1 Startup Hack
-            %h2 A day for developers, designers and innovators living in Stockholm to meet and build things together.
-            .offset2.span8
-              %form
-                %input{type: "text", placeholder: "Type email to get notified"}
-                %input{type: "submit", value: ">"}
+          .span12
+            .hero
+              %h1
+                %span.city Stockholm
+                Startup Hack
+              %h2
+                %b May 11 2013
+                at Skeppsholmskyrkan
+              // %p Save the date - May 11 2013! #SthlmStartupHack at Skeppsholmskyrkan.
+              .row-fluid
+                .offset3.span6
+                  %form
+                    %input{type: "text", placeholder: "Join our email list"}
+                    %input{type: "submit", value: ">"}
 
     .container-fluid
       .row-fluid
         .offset4.span4
-          %h3.fancy Cool headline
+          %h3.fancy About
       .row-fluid.desciption
         .offset2.span8
-          %p Participants will get 12 hours to create something, you can choose to work on your own or in a team (max three people). You can build whatever you want as long as it can stand on its own. We really want to encourage you to make something out of that idea you’ve been saving for later, rather than building something related to your job. Of course, the most important part is that it’s fun and inspiring.
-          %p The winning team will receive a secret prize, something small but worthy. Spots are limited so apply soon.
-          %p We promise to keep you happy all day long with food, drinks, and lots of love. After the hackathon there will be a party further down the street at Tripbirds HQ to celebrate the winners.
+          %p Stockholm Startup Hack is a day for developers, designers and innovators living in Stockholm to meet and build things together. We want to put Stockholm on the map as one of the best startup cities in Europe, as well as grow and strengthen our community. We hope that this hackathon can be a small step in that direction.
+          %h4 How it works?
+          %p Participants will get 12 hours to create something, you can choose to work on your own or in a team (max five people). You can build whatever you want as long as it can stand on its own. We really want to encourage you to make something out of that idea you’ve been saving for later, rather than building something related to your job. Of course, the most important part is that it’s fun and inspiring.
 
       .row-fluid
         .offset4.span4
@@ -49,19 +55,21 @@
         .span4.member
           %img{src: image_path("jocke.jpg")}
           %h4 Joakim Ekberg
-          %a{src: "https://www.wrapp.com/"} Wrapp
-          %p Rubyist, Entrepreneur and Barefoot Hacker making software for iPhone, iPad and the Web. Currently Team Lead at Wrapp. Also, I'm a nice guy.
+          %h5
+            %a{href: "https://www.wrapp.com/"} Wrapp
+          %p Rubyist, Entrepreneur and Barefoot Hacker making software for iPhone, iPad and the Web. Currently Team Lead at <a href="http://wrapp.com">Wrapp</a>. Also, I'm a nice guy.
 
         .span4.member
           %img{src: image_path("martina.jpg")}
           %h4 Martina Elm
-          %a{src: "https://www.wrapp.com/"} Mitt livs disco
-          %p Rubyist, Entrepreneur and Barefoot Hacker making software for iPhone, iPad and the Web. Currently Team Lead at Wrapp. Also, I'm a nice guy.
+          %h5 Mitt livs disco
+          %p Freelance communications manager & event planner that loves food and the web. Head of marketing at <a href="http://www.islandinthesun.nu/">Island in the sun</a>.
 
         .span4.member
           %img{src: image_path("jonny.jpg")}
           %h4 Jonny Strömberg
-          %a{src: "https://www.wrapp.com/"} Salvation
-          %p Rubyist, Entrepreneur and Barefoot Hacker making software for iPhone, iPad and the Web. Currently Team Lead at Wrapp. Also, I'm a nice guy.
+          %h5
+            %a{href: "http://www.jonnystromberg.com/"} Everywhere and nowhere
+          %p Passionate Designer & JavaScript Hacker since 1998 who builds stuff. <a href="http://startuplocation.com">StartupLocation</a>, <a href="http://silarapp.com">Silarapp</a>, <a href="http://listjs.com">List.js</a> & more. Dribbble: <a href="http://dribbble.com/javve">@javve</a>.
 
     %script{:src => "assets/app.js"}
