@@ -212,16 +212,14 @@ h3.fancy {
     padding:20px;
   }
   .desciption {
+    padding: 0 40px;
+    box-sizing: border-box;
     h4 {
-      margin-left:40px;
-      margin-right:40px;
       text-align:center;
     }
     p {
       font-size:15px;
       line-height:1.6;
-      margin-left:40px;
-      margin-right:40px;
     }
   }
 }
