@@ -30,6 +30,7 @@ a {
   margin: 0 auto;
 }
 
+
 .hero {
   margin-top: 20%;
   color: white;
@@ -58,7 +59,7 @@ a {
     font-size: 25px;
     text-align: center;
     max-width: 500px;
-    margin: 40px auto 40px;
+    margin: 40px auto 30px;
   }
   p {
     line-height:1.6;
@@ -175,6 +176,14 @@ h3.fancy {
   }
 }
 
+@media (max-height: 1050px) { .hero { margin-top: 20%; } .start { zoom:1;    } }
+@media (max-height: 1000px) { .hero { margin-top: 18%; } .start { zoom:0.95; } }
+@media (max-height: 950px)  { .hero { margin-top: 16%; } .start { zoom:0.9;  } }
+@media (max-height: 900px)  { .hero { margin-top: 14%; } .start { zoom:0.85; } }
+@media (max-height: 850px)  { .hero { margin-top: 12%; } .start { zoom:0.8;  } }
+@media (max-height: 800px)  { .hero { margin-top: 10%; } .start { zoom:0.75; } }
+@media (max-height: 750px)  { .hero { margin-top: 8%; } }
+@media (max-height: 700px)  { .hero { margin-top: 6%; } }
 
 
 @media (max-width: 767px) {
