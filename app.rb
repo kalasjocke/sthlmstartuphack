@@ -6,11 +6,15 @@ class App < Sinatra::Base
   end
 
   post '/' do
-    gibbon = Gibbon.new('80fe3b3813f912cc381ee545e4974f63-us5')
+    email = params["email"]
+
+    logger.info "Enrolling #{email}"
+
+    h = Hominid::API.new('80fe3b3813f912cc381ee545e4974f63-us5')
 
     begin
       id = "4b6dc9f6f8"
-      gibbon.list_subscribe({:id => id, :email_address => params["email"]})
+      h.list_subscribe(id, email, {}, 'html', false, true, true, false)
 
       "Yay"
     rescue Exception => exception
