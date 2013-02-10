@@ -68,11 +68,14 @@ a {
     text-align: center;
     max-width: 500px;
     margin: 20px auto 40px;
+    &.why {
+      font-weight:600;
+    }
   }
 
   .thanks {
     margin-top:-40px;
-    text-shadow:0 0 10px #000;
+    text-shadow:0 0 30px #000;
     p {
       max-width: 650px;
       margin: 0 auto 20px;
