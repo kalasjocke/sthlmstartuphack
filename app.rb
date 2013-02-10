@@ -19,5 +19,9 @@ class App < Sinatra::Base
     rescue Exception => exception
       logger.warn "Error #{exception.to_s}"
     end
+
+    @thanks = true
+
+    haml :index
   end
 end
