@@ -13,6 +13,9 @@ html, body {
 
 a {
   color: #82e9b7;
+  &:hover {
+    color:#5ccf97;
+  }
 }
 
 #splash {
@@ -66,9 +69,19 @@ a {
     margin: 20px auto 40px;
   }
 
-  .thanks p {
-    max-width: 650px;
-    margin: 0 auto 20px;
+  .thanks {
+    margin-top:-40px;
+    text-shadow:0 0 10px #000;
+    p {
+      max-width: 650px;
+      margin: 0 auto 20px;
+    }
+    .share {
+      padding-top:10px;
+      .span2 {
+        padding-left: 5%;
+      }
+    }
   }
 
   input[type="text"], input[type="submit"] {
@@ -210,6 +223,17 @@ h3.fancy {
     input[type="submit"] {
       padding: 17px 0px;
     }
+
+    .thanks {
+      text-shadow:0 0 10px #000;
+      p {
+        font-size:13px;
+      }
+      .share .span2 {
+        margin-left:35%;
+      }
+    }
+
   }
   h3.fancy {
     padding:20px;
