@@ -109,13 +109,15 @@ a {
 
   input[type="email"], input[type="text"] {
     width: 85%;
-    padding: 37px;
+    padding: 27px 37px;
+    height:auto;
   }
 
   input[type="submit"] {
     background-color: rgba(0,0,0,0.8);
     width: 15%;
-    padding: 27px 0px;
+    padding: 28px 0px 29px;
+    height:auto;
   }
 }
 
