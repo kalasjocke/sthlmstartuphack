@@ -95,7 +95,7 @@ a {
     }
   }
 
-  input[type="text"], input[type="submit"] {
+  input[type="email"], input[type="text"], input[type="submit"] {
     @include box-sizing(border-box);
     @include border-radius(0px);
     @include box-shadow(none);
@@ -107,7 +107,7 @@ a {
     color: #fff;
   }
 
-  input[type="text"] {
+  input[type="email"], input[type="text"] {
     width: 85%;
     padding: 37px;
   }
@@ -237,10 +237,10 @@ h3.fancy {
       max-width:500px;
       margin: 0 auto;
     }
-    input[type="text"], input[type="submit"] {
+    input[type="email"], input[type="text"], input[type="submit"] {
       font-size: 13px;
     }
-    input[type="text"] {
+    input[type="email"], input[type="text"] {
       padding: 27px;
     }
     input[type="submit"] {
