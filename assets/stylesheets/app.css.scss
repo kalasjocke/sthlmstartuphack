@@ -183,7 +183,7 @@ h3.fancy {
 }
 
 .team {
-  padding: 70px 0px;
+  padding: 20px 0px;
 
   .member {
     text-align: center;
@@ -300,6 +300,23 @@ h3.fancy {
     p {
       font-size:15px;
       line-height:1.6;
+    }
+  }
+  .sponsors {
+    .flower {
+      img {
+        width:50%;
+        margin:0 25%;
+      }
+    }
+    .seed {
+      .span2 {
+        width:auto;
+        float:left;
+        width:50%;
+      }
+      img {
+      }
     }
   }
 }
