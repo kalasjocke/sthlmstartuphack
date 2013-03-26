@@ -28,34 +28,25 @@
           .row-fluid
             .span12
               .hero
-                - unless @thanks
-                  .start
-                    %h1
-                      %span.city Stockholm
-                      Startup Hack
-                    %h2
-                      %b May 11 2013
-                      at Skeppsholmskyrkan
-                    .row-fluid
-                      .offset3.span6
-                        %form{method: "POST"}
-                          %input{name: "email", type: "text", placeholder: "Join our email list"}
-                          %input{type: "submit", value: ">"}
-                    %p.why Want to get notified when we open up for applications? Type your email above!
-
-                - else
-                  .thanks
-                    %h1 Cool!
-                    %h2 <b>You're now on the mailing list for STHLM Startup Hack</b>
-                    %p This means that you won't be missing out on any of the super important information associated to STHLM Startup Hack as well as being the first to know when we open up for applications.
-                    %p SEE YA SOON / <a href="http://twitter.com/javve">Jonny</a>, <a href="http://twitter.com/kalasjocke">Jocke</a> & <a href="http://twitter.com/martinaelm">Martina</a>
-                    .row-fluid.share
-                      .span2.offset3
-                        <a href="https://twitter.com/share" class="twitter-share-button" data-text="Save the date - May 11 2013! #SthlmStartupHack at Skeppsholmskyrkan." data-url="http://sthlmstartuphack.com">Tweet</a>
-                      .span2
-                        <div class="fb-like" data-send="false" data-layout="button_count" data-show-faces="false" data-font="arial" data-width="100" data-href="https://www.facebook.com/pages/STHLM-Startup-Hack/416909925056755"></div>
-                      .span2
-                        <div class="g-plusone" data-size="medium" data-annotation="inline" data-width="120" href="http://sthlmstartuphack.com"></div>
+                .start
+                  %h1
+                    %span.city Stockholm
+                    Startup Hack
+                  %h2
+                    %b May 11 2013
+                    at Skeppsholmskyrkan
+                  .row-fluid
+                    .offset3.span6
+                      %a{href: "#", class: "apply" } Apply now!
+                      .why
+                        %p You have until the 14th of April to complete your application. The teams who make it through will be announced shortly after.
+                        .row-fluid.share
+                          .span3.offset1
+                            <a href="https://twitter.com/share" class="twitter-share-button" data-text="Save the date - May 11 2013! #SthlmStartupHack at Skeppsholmskyrkan." data-url="http://sthlmstartuphack.com">Tweet</a>
+                          .span3
+                            <div class="fb-like" data-send="false" data-layout="button_count" data-show-faces="false" data-font="arial" data-width="100" data-href="https://www.facebook.com/pages/STHLM-Startup-Hack/416909925056755"></div>
+                          .span3
+                            <div class="g-plusone" data-size="medium" data-annotation="inline" data-width="120" href="http://sthlmstartuphack.com"></div>
     .white
       .container-fluid.bottom
         .row-fluid
