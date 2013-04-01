@@ -1,17 +1,15 @@
-source :rubygems
+source 'https://rubygems.org'
 
 gem 'sinatra'
 gem 'haml'
-gem 'sass'
 gem 'compass'
 gem 'coffee-script'
-gem 'sprockets'
-gem 'sprockets-sass'
-gem 'sprockets-helpers'
 gem 'hominid'
+gem 'compass'
+gem 'sinatra-asset-pipeline'
 
 group :development do
   gem 'rb-fsevent'
-  gem "guard-livereload"
-  gem "rack-livereload"
+  gem 'guard-livereload'
+  gem 'rack-livereload'
 end
