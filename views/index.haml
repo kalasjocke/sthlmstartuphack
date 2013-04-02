@@ -75,69 +75,78 @@
                 <div class="g-plusone" data-size="medium" data-annotation="inline" data-width="120" href="http://sthlmstartuphack.com"></div>
 
         .sponsors
-          .garden
+          .garden{style: "margin-bottom:30px;"}
             .row-fluid
               .offset2.span8
                 %h3.fancy Sponsors
 
             .row-fluid
-              .span3
+              .span4
                 .inner
                   %a{href: "http://www.creandum.com/"}
                     %img{src: image_path("sponsors/creandum.png")}
                   %p Creandum is a venture capital firm investing in seed, early and later stage companies with innovative technology and disruptive business models.
                   %p
                     %a{href: "http://www.creandum.com/"} <b>Creandum.com</b>
-              .span3
-                .inner
-                  %a{href: "http://www.spotify.com/"}
-                    %img{src: image_path("sponsors/spotify.png")}
-                  %p Creandum is a venture capital firm investing in seed, early and later stage companies with innovative technology and disruptive business models.
-                  %p
-                    %a{href: "http://www.spotify.com/"} <b>Spotify.com</b>
-              .span3
-                .inner
-                  %a{href: "http://www.vinnova.se/sv/"}
-                    %img{src: image_path("sponsors/vinnova.png")}
-                  %p VINNOVA - Swedish Governmental Agency for Innovation Systems - is Sweden’s innovation agency. We strengthen Sweden’s innovativeness, aiding sustainable growth and benefiting society.
-                  %p
-                    %a{href: "http://www.vinnova.se/sv/"} <b>Vinnova.se</b>
-              .span3
+              .span4
                 .inner
                   %a{href: "http://www.glesys.com/"}
                     %img{src: image_path("sponsors/glesys.png")}
                   %p GleSYS -  Server Hosting since 1999.
                   %p
                     %a{href: "http://www.glesys.com/"} <b>GleSYS.com</b>
+              .span4
+                .inner
+                  %a{href: "http://www.vinnova.se/sv/"}
+                    %img{src: image_path("sponsors/vinnova.png")}
+                  %p VINNOVA - Swedish Governmental Agency for Innovation Systems - is Sweden’s innovation agency. We strengthen Sweden’s innovativeness, aiding sustainable growth and benefiting society.
+                  %p
+                    %a{href: "http://www.vinnova.se/sv/"} <b>Vinnova.se</b>
           .flower{style: "margin-bottom:30px;"}
             .row-fluid
               .span3
                 .inner
-                  %img{src: image_path("sponsors/load-impact.png")}
+                  %a{href: "http://loadimpact.com/"}
+                    %img{src: image_path("sponsors/load-impact.png")}
                   %p Load Impact is the most popular on-demand load testing tool on the internet. Since 2009, users from over 190 countries have performed more than 700,000 tests using the service. The company is based in Stockholm and Singapore.
+                  %p
+                    %a{href: "http://loadimpact.com/"} <b>LoadImpact.com</b>
               .span3
                 .inner
-                  %img{src: image_path("sponsors/mynewsdesk.png")}
+                  %a{href: "http://www.mynewsdesk.com"}
+                    %img{src: image_path("sponsors/mynewsdesk.png")}
                   %p Pioneered in Sweden by journalists and web innovators, Mynewsdesk is a platform for PR and brand engagement. Many of the world's best brands and agencies use Mynewsdesk's newsrooms to tell their stories.
+                  %p
+                    %a{href: "http://www.mynewsdesk.com/"} <b>Mynewsdesk.com</b>
               .span3
                 .inner
-                  %img{src: image_path("sponsors/fyndiq.png")}
+                  %a{href: "http://fyndiq.se/"}
+                    %img{src: image_path("sponsors/fyndiq.png")}
                   %p Fyndiq is one of Sweden's fastest growing e-commerce startups, providing a platform that connects merchants with consumers in a big bargain shop. We support Sthlm Startup Hack because we love the hacker and startup community, and also to be able to say: we're hiring! (sysadmins, django developers, designers, frontend developers)
+                  %p
+                    %a{href: "http://www.fyndiq.se/"} <b>Fyndiq.se</b>
               .span3
                 .inner
-                  %img{src: image_path("sponsors/amazon.png")}
-                  %p Pioneered in Sweden by journalists and web innovators, Mynewsdesk is a platform for PR and brand engagement. Many of the world's best brands and agencies use Mynewsdesk's newsrooms to tell their stories.
+                  %a{href: "http://aws.amazon.com/"}
+                    %img{src: image_path("sponsors/amazon.png")}
+                  %p Amazon Web Services (AWS) delivers a set of services that together form a reliable, scalable, and inexpensive computing platform “in the cloud”. These pay-as-you-use cloud computing services.
+                  %p
+                    %a{href: "http://aws.amazon.com/"} <b>Spotify.com</b>
 
           .seed
             .row-fluid
               .span2.offset2
-                %img{src: image_path("sponsors/revrise.png")}
+                %a{href: "http://revrise.com/form-analytics"}
+                  %img{src: image_path("sponsors/revrise.png")}
               .span2
-                %img{src: image_path("sponsors/tink.png")}
+                %a{href: "https://www.tink.se/"}
+                  %img{src: image_path("sponsors/tink.png")}
               .span2
-                %img{src: image_path("sponsors/jobylon.png")}
+                %a{href: "http://www.jobylon.se/"}
+                  %img{src: image_path("sponsors/jobylon.png")}
               .span2
-                %img{src: image_path("sponsors/tictail.png")}
+                %a{href: "https://tictail.com/"}
+                  %img{src: image_path("sponsors/tictail.png")}
 
         .row-fluid
           .offset4.span4
@@ -167,7 +176,8 @@
           .span4.member
             %img{src: image_path("martina.jpg")}
             %h4 Martina Elm
-            %h5 Hyper Island
+            %h5
+              %a{href: "http://www.hyperisland.com/" } Hyper Island
             %p Freelance communications manager & event planner that loves food and the web. Head of marketing at <a href="http://www.islandinthesun.nu/">Island in the sun</a>.
             %p <a href="https://twitter.com/martinaelm" class="twitter-follow-button" data-show-count="false" data-lang="en">Follow @martinaelm</a>
 
