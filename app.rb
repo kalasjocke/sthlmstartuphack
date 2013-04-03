@@ -6,6 +6,7 @@ require 'sinatra/asset_pipeline'
 class App < Sinatra::Base
   set :list_id, "4b6dc9f6f8"
   set :api_key, "80fe3b3813f912cc381ee545e4974f63-us5"
+  set :assets_precompile, %w(app.js app.css analytics.js *.png *.jpg *.svg *.eot *.ttf *.woff)
 
   register Sinatra::AssetPipeline
 
