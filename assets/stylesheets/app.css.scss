@@ -137,10 +137,13 @@ h3.fancy {
 }
 .flower {
   font-size:11px;
+  .span3 {
+    width:18%;
+  }
   .inner {
     img {
-      width:70%;
-      margin:0 15%;
+      width:90%;
+      margin:0 5%;
     }
     margin:0 10%;
   }
