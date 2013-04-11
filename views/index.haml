@@ -17,12 +17,11 @@
     %meta{:property => "og:description", :content => "A day for developers, designers and innovators living in Stockholm to meet and build things together."}
     %meta{:property => "og:type", :content => "website"}
     %meta{:property => "og:url", :content => "http://sthlmstartuphack.com/"}
-    %meta{:property => "og:image", :content => "#{image_path("og-image.jpg")}"}
+    %meta{:property => "og:image", :content => "#{image_path("og-image.jpg")}?t=12345"}
 
     %script{:src => asset_path("analytics.js")}
 
   %body
-    .img{src: "#{image_path("og-image.jpg")}", class: 'ogp-mother-loving-shit'}
     .black
       #splash{:"data-0" => "opacity:1;", :"data-0-top-center" => "opacity:0.2;"}
         .container-fluid
