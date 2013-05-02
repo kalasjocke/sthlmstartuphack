@@ -22,32 +22,26 @@
     %script{:src => asset_path("analytics.js")}
 
   %body
+    .header
+      .logo
+        %h1
+          %span.city Stockholm
+          Startup Hack
+        %h2
+          %b May 11 2013
+          at Skeppsholmskyrkan
     .black
-      #splash{:"data-0" => "opacity:1;", :"data-0-top-center" => "opacity:0.2;"}
+      #party-splash
         .container-fluid
           .row-fluid
-            .span12
-              .hero
-                .start
-                  %h1
-                    %span.city Stockholm
-                    Startup Hack
-                  %h2
-                    %b May 11 2013
-                    at Skeppsholmskyrkan
-                .row-fluid
-                  .offset3.span6
-                    .why
-                      %p
-                        %a{ href: "https://docs.google.com/forms/d/1tKmEdXKi8K_ak53gK9x8AOhotpIQkWlb_CA3LrTWBGQ/viewform", class: "apply" }
-                          Register for the party
-                      .row-fluid.share
-                        .span3.offset1
-                          <a href="https://twitter.com/share" class="twitter-share-button" data-text="Save the date - May 11 2013! #SthlmStartupHack at Skeppsholmskyrkan." data-url="http://sthlmstartuphack.com">Tweet</a>
-                        .span3
-                          <div class="fb-like" data-send="false" data-layout="button_count" data-show-faces="false" data-font="arial" data-width="100" data-href="https://www.facebook.com/pages/STHLM-Startup-Hack/416909925056755"></div>
-                        .span3
-                          <div class="g-plusone" data-size="medium" data-annotation="inline" data-width="120" href="http://sthlmstartuphack.com"></div>
+            .span8.offset2
+              %img{ src: asset_path("sign-up-for-the-party.png") }
+              %h3
+                %a{ href: "https://docs.google.com/forms/d/1tKmEdXKi8K_ak53gK9x8AOhotpIQkWlb_CA3LrTWBGQ/viewform", class: "signup" }
+                  Sign up for the party
+              %p
+                %a{ href: "#party-info" }
+                  Read more »
     .white
       .container-fluid.bottom
         .row-fluid
@@ -63,11 +57,12 @@
               you’ve been saving for later, rather than building something related to your job. Of course, the most important part is that it’s fun and inspiring.
               The winning team will receive a secret prize, something small but worthy. The hackathon is <b>free</b> and we promise to keep you happy
               all day long with <b>food, drinks, and lots of love</b>.
-            %p You have until the <b>14th of April</b> to complete your application. The teams who make it through will be announced shortly after.
 
         .row-fluid
           .offset4.span4
-            %h3.fancy The party
+            %h3.fancy
+              %a{ id: "party-info", class: "anchor" }
+                The party
         .row-fluid.desciption
           .offset2.span8
             %p In connection to STHLM Startup Hack we will host a party to celebrate Stockholm’s amazing startup community. We will open up the doors to everyone when presentations start. When the winner has been crowned, we will turn the church into a dancefloor with a bar and DJs from different startups. We’d love to see you there!
