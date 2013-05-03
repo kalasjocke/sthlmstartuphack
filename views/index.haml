@@ -31,7 +31,7 @@
           %b May 11 2013
           at Skeppsholmskyrkan
     .black
-      #party-splash
+      #party-splash{ style: "margin-bottom:40px;" }
         .container-fluid
           .row-fluid
             .span8.offset2
@@ -45,6 +45,16 @@
     .white
       .container-fluid.bottom
         .row-fluid
+          .offset2.span8
+            .row-fluid
+              .span3.offset2
+                <a href="https://twitter.com/share" class="twitter-share-button" data-text="Sign up for the #SthlmStartupHack party, right now! May 11 2013 at Skeppsholmskyrkan. It's going to be amazing." data-url="http://sthlmstartuphack.com">Tweet</a>
+              .span3
+                <div class="fb-like" data-send="false" data-layout="button_count" data-show-faces="false" data-font="arial" data-width="100" data-href="https://www.facebook.com/pages/STHLM-Startup-Hack/416909925056755"></div>
+              .span3
+                <div class="g-plusone" data-size="medium" data-annotation="inline" data-width="120" href="http://sthlmstartuphack.com"></div>
+
+        .row-fluid
           .offset4.span4
             %h3.fancy The hackathon
         .row-fluid.desciption
@@ -57,6 +67,29 @@
               you’ve been saving for later, rather than building something related to your job. Of course, the most important part is that it’s fun and inspiring.
               The winning team will receive a secret prize, something small but worthy. The hackathon is <b>free</b> and we promise to keep you happy
               all day long with <b>food, drinks, and lots of love</b>.
+
+        .row-fluid
+          .offset4.span4
+            %h3.fancy
+              %a{ id: "workshop-info", class: "anchor" }
+                The workshop
+        .row-fluid.desciption
+          .offset2.span8
+            %p
+              Want to learn code but don’t know where to start? This is a workshop for you. In parallel to
+              STHLM Startup Hack, Ola Möller from <a href="http://www.methodkit.com">MethodKit</a> and Samuel Hedberg from
+              <a href="www.hyperisland.com">Hyper Island</a> will host
+              a workshop about emerging technologies, how to build stuff and the reasoning used when creating apps.
+            %p
+              This is no lecture, together with the other participants you’ll create ideas for apps & services.
+              The idea is to understand the possibilities with technology & to create ideas that can be realized.
+              For example, What will become if you combine a step counter, heart rate monitor & Spotify?
+              Maybe an app that sync the beats to your pace of walking or an app that pick calming music when we are too stressed.
+            %p
+              The best idea will be presented along with the winners of the Startup Hack. Sign up now, the seats are limited!
+            %p{style:"text-align:center;"}
+              %a{ href: "https://docs.google.com/forms/d/1HC2mr9kZH6SQPiEIXJL1tAbAQAwP7TenpjM0Wg9lYsE/viewform", class: "btn btn-info btn-large" }
+                <b>Sign up for the workshop!</b>
 
         .row-fluid
           .offset4.span4
@@ -86,15 +119,8 @@
 
             %p{style:"text-align:center;"}
               %a{ href: "https://docs.google.com/forms/d/1tKmEdXKi8K_ak53gK9x8AOhotpIQkWlb_CA3LrTWBGQ/viewform", class: "btn btn-info btn-large" }
-                <b>Want to come? Sign up here!</b>
+                <b>Sign up for the party!</b>
             %p <em style="font-size:13px;">To grab a spot, you need to sign up on the list. We have a lot of space and everyone is welcome but we might not be able to fit all. When we’ve reached the max. capacity of the church, it’s full.  So on the day of the event, get there in time to make sure to get in.</em>
-            .row-fluid
-              .span3.offset2
-                <a href="https://twitter.com/share" class="twitter-share-button" data-text="Sign up for the #SthlmStartupHack party, right now! May 11 2013 at Skeppsholmskyrkan. It's going to be amazing." data-url="http://sthlmstartuphack.com">Tweet</a>
-              .span3
-                <div class="fb-like" data-send="false" data-layout="button_count" data-show-faces="false" data-font="arial" data-width="100" data-href="https://www.facebook.com/pages/STHLM-Startup-Hack/416909925056755"></div>
-              .span3
-                <div class="g-plusone" data-size="medium" data-annotation="inline" data-width="120" href="http://sthlmstartuphack.com"></div>
 
         .sponsors
           .garden{style: "margin-bottom:30px;"}
