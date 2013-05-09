@@ -32,4 +32,8 @@ class App < Sinatra::Base
 
     haml :index
   end
+
+  get '/aws' do
+    redirect 'https://www.hackerleague.org/hackathons/sthlm-startup-hack-2013/wikipages/518b9e25631259129a00001c'
+  end
 end
