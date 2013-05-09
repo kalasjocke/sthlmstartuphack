@@ -36,4 +36,12 @@ class App < Sinatra::Base
   get '/aws' do
     redirect 'https://www.hackerleague.org/hackathons/sthlm-startup-hack-2013/wikipages/518b9e25631259129a00001c'
   end
+
+  get '/join' do
+    redirect 'https://www.hackerleague.org/hackathons/sthlm-startup-hack-2013/hacks/new'
+  end
+
+  get '/hacks' do
+    redirect 'https://www.hackerleague.org/hackathons/sthlm-startup-hack-2013/hacks'
+  end
 end
