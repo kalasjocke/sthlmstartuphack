@@ -23,26 +23,13 @@
 
   %body
     .header
-      .logo
+      .logo{style: "margin-bottom: 40px;"}
         %h1
           %span.city Stockholm
           Startup Hack
         %h2
           %b May 11 2013
           at Skeppsholmskyrkan
-    .black
-      #party-splash{ style: "margin-bottom:40px;" }
-        .container-fluid
-          .row-fluid
-            .span8.offset2
-              %img{ src: asset_path("sign-up-for-the-party.png") }
-              %h3
-                %a{ href: "https://docs.google.com/forms/d/1tKmEdXKi8K_ak53gK9x8AOhotpIQkWlb_CA3LrTWBGQ/viewform", class: "signup" }
-                  Sign up for the party
-              %p
-                <span style="color:#fff;"><em>Age limit: <b>18 yrs</b></em></span> &nbsp; &nbsp;
-                %a{ href: "#party-info" }
-                  Read more »
     .white
       .container-fluid.bottom
         .row-fluid
